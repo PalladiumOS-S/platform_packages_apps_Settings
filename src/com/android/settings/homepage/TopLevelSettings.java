@@ -109,13 +109,13 @@ public class TopLevelSettings extends DashboardFragment implements
         final int count = screen.getPreferenceCount();
         for (int i = 0; i < count; i++) {
             final Preference preference = screen.getPreference(i);
-            if(i == 0 || i== 3 || i==7 || i==10 || i== 15 || i==17){
+            if(i == 0 || i== 3 || i==8 || i==11 || i==16 || i==18){
                 preference.setLayoutResource(R.layout.card_top);
             }
-            else if (i== 1 || (i>=4 && i<6) || i==8 || (i>=11 && i<=13) || i==18){
+            else if (i== 1 || (i>=4 && i<7) || i==9 || (i>=12 && i<=14) || i==19){
                 preference.setLayoutResource(R.layout.card_mid);
             }
-            else if ( i==2 || i==6 || i==9 || i==14 || i==16 || i== 19){
+            else if ( i==2 || i==7 || i==10 || i==15 || i==17 || i== 20){
                 preference.setLayoutResource(R.layout.card_end);
             }
             screen.addPreference(preference);

@@ -25,7 +25,7 @@
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         android:icon="@drawable/ic_settings_wireless"
         android:key="top_level_network"
-        android:order="-150"
+        android:order="-160"
         android:title="@string/network_dashboard_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.network.TopLevelNetworkEntryPreferenceController"/>
@@ -35,7 +35,7 @@
         android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"
         android:icon="@drawable/ic_devices_other"
         android:key="top_level_connected_devices"
-        android:order="-140"
+        android:order="-150"
         android:title="@string/connected_devices_dashboard_title"
         android:summary="@string/connected_devices_dashboard_default_summary"
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
@@ -59,6 +59,14 @@
         android:title="@string/display_settings"
         android:summary="@string/display_dashboard_summary"
         settings:controller="com.android.settings.display.TopLevelDisplayPreferenceController"/>
+
+    <Preference
+        android:fragment="com.palladium.atomichub.Atomichub"
+        android:icon="@drawable/ic_atomichub"
+        android:key="top_level_palladium_customisation"
+        android:order="-117"
+        android:title="@string/palladium_customisation_title"
+        android:summary="@string/palladium_customisation_summary"/>
 
     <com.android.settingslib.RestrictedTopLevelPreference
         android:layout="@layout/card_mid"
